@@ -1,0 +1,80 @@
+import {Appear, Image, Notes} from 'mdx-deck'
+import {
+  CodeSurferLayout,
+  CodeSurferColumnLayout,
+  Code
+} from 'code-surfer'
+
+# Instalasi React native
+
+---
+
+# Kebutuhan
+
+<ul>
+  <Appear>
+    <li>Koneksi Internet, Syukurlah kalo kenceng</li>
+    <li>Nodejs + NPM</li>
+    <li>
+      Sudah terinstall <a href='http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html'> JDK versi 8</a> 
+    </li>
+    <li>Sudah terinstall Android Studio+SDK</li>
+    <li>Code editor</li>
+    <li>terminal atau cmd (Windows silahkan gunakan cmder)</li>
+  </Appear>
+</ul>
+
+---
+
+<CodeSurferLayout>
+
+  ```bash subtitle="Masukkan perintah tersebut ke dalam terminal/cmd" title="Instalasi React Native"
+  npm install -g react-native-cli
+  ```
+
+  ```bash subtitle="Masuk ke directory mana saja misal project dan lain sebagainya melalui terminal/cmd, masukkan code tersebut dan pastikan koneksi Internet tersambung!" title="Buat Project React Native"
+  create-react-native nama-folder
+  ```
+
+  ```bash title="Masuk ke directory project"
+  cd nama-folder
+  ```
+
+  ```bash title="Jalankan React native start" subtitle="run apps di platform Android"
+  react-native run-android
+  ```
+
+  <Code
+    code={require('!!raw-loader!./codes/simpleCode.js').default}
+    lang="jsx"
+    title="Contoh code React native"
+  />
+
+  <Code
+    code={require('!!raw-loader!./codes/simpleCode.js').default}
+    focus="1:2"
+    lang="jsx"
+    title="import React dan React native"
+    subtitle="Memanggil library React native seperti Text dan View"
+  />
+
+  <Code
+    code={require('!!raw-loader!./codes/simpleCode.js').default}
+    focus="4"
+    lang="jsx"
+    title="Mendefinisikan class Component"
+    subtitle="Membuat Class Component bernama App dengan menggunakan Component dari React"
+  />
+
+  <Code
+    code={require('!!raw-loader!./codes/simpleCode.js').default}
+    focus="5:11"
+    lang="jsx"
+    title="Me render layout"
+    subtitle="Menampilkan Text"
+  />
+
+</CodeSurferLayout>
+
+
+
